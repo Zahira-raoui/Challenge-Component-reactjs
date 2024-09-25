@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: rgb(5, 104, 111); 
+  color: white; 
+  font-size: 24px; 
+  padding: 20px;
+  font-weight: bold; 
+}
+
+.stylebox1{
+  border: 4px solid rgb(5, 104, 111);
+  margin-top: 20px;
+  text-align: center; 
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+}
+
+.stylebox2{
+  border: 4px solid rgb(5, 104, 111);
+  margin-top: 20px;
+  text-align: center; 
+  padding: 30px;
+}
+
+.separator{
+  margin: 10px;
+}
+.stylebutton{
+  background-color: rgb(106, 13, 127); 
   color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 15px 30px; 
+  font-size: 16px;
+  margin: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  display: flex; /* Utilise Flexbox pour aligner les enfants horizontalement */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: flex-start; /* Aligne le contenu en haut */
+  gap: 20px; /* Espace entre les deux blocs */
+  margin-top: 20px; /* Marge supérieure pour espacer du header */
 }
